@@ -1,0 +1,18 @@
+@font-face {
+    font-family: headingFont;
+    src: url(Pacifico-Regular.ttf);
+}
+
+@font-face {
+    font-family: bodyFont;
+    src: url(Body.ttf);
+}
+
+body {
+    background-color: #7F00FF;
+    color: white;
+}
+
+nav {
+    font-family: headingFont;
+}
