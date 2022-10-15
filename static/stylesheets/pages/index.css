@@ -1,0 +1,28 @@
+@media (max-width: 600px) {
+    .index__heading {
+        font-size: 2em !important;
+    }
+    
+    .index__bubble {
+        height: 30px !important;
+        width: 30px !important;
+    }
+}
+
+@media (max-width: 450px) {
+    .index__heading {
+        font-size: 1.8em !important;
+    }
+    
+    .index__bubble {
+        height: 25px !important;
+        width: 25px !important;
+    }
+}
+
+@media (max-width: 300px) {
+    .index__sun {
+        width: 250px !important;
+        height: 250px !important;
+    }
+}
