@@ -1,14 +1,10 @@
 .siteBar {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 2em;
-    height: 45px;
-    background-color: #7F00FF;
-    
-    z-index: 100;
+    display: block;
+    overflow: hidden;
     position: fixed;
-    min-width: 100vw;
+    padding: 5px;
+    width: 100%;
+    background-color: #7F00FF;
 }
 
 .hidden {
@@ -18,12 +14,11 @@
 .siteBar__top {
     left: 0;
     top: 0;
-    border-bottom: 2px solid white;
+    border-bottom: 2px solid white !important;
 }
 
-.siteBar_bottom {
+.siteBar__bottom {
     border-top: 2px solid white;
-    left: 0;
     bottom: 0;
 }
 

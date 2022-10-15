@@ -1,3 +1,11 @@
+.index {
+    margin-top: 2em;
+}
+
+.index__pwa {
+    margin-top: 1em;
+}
+
 @media (max-width: 600px) {
     .index__heading {
         font-size: 2em !important;
