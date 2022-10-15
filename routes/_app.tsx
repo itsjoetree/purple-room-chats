@@ -75,7 +75,7 @@ export default function App(props: AppProps) {
       </script>
     </Head>
     
-    <body style={{marginTop: (window?.matchMedia && window.matchMedia('(display-mode: standalone)').matches) ? 10 : 20}} id="main">
+    <body id="main">
         <SiteBar />
         <props.Component />
     </body>

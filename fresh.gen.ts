@@ -12,8 +12,9 @@ import * as $5 from "./routes/api/helpers.ts";
 import * as $6 from "./routes/api/users.ts";
 import * as $7 from "./routes/index.tsx";
 import * as $8 from "./routes/vip/post.tsx";
-import * as $$0 from "./islands/NewPost.tsx";
-import * as $$1 from "./islands/SiteBar.tsx";
+import * as $$0 from "./islands/IndexBlock.tsx";
+import * as $$1 from "./islands/NewPost.tsx";
+import * as $$2 from "./islands/SiteBar.tsx";
 
 const manifest = {
   routes: {
@@ -28,8 +29,9 @@ const manifest = {
     "./routes/vip/post.tsx": $8,
   },
   islands: {
-    "./islands/NewPost.tsx": $$0,
-    "./islands/SiteBar.tsx": $$1,
+    "./islands/IndexBlock.tsx": $$0,
+    "./islands/NewPost.tsx": $$1,
+    "./islands/SiteBar.tsx": $$2,
   },
   baseUrl: import.meta.url,
   config,
