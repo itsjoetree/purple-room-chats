@@ -18,7 +18,7 @@ export default function Home() {
 
         <h2 style={{margin: 0, fontFamily: "headingFont", fontSize: "2em"}}>in development 👨🏻‍💻</h2>
         <p>
-          A low key media site for the hotties, developed by Joe Tree
+          A low key media site for the hotties, developed by <a style="color: white;" href="https://joesalinas.dev">Joe Tree</a>
         </p>
 
         <h3 style={{fontFamily: "headingFont", fontSize: "1.5em", margin: 0}}>upcoming features</h3>
