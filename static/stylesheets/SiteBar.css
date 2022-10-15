@@ -14,6 +14,7 @@
 .siteBar__top {
     left: 0;
     top: 0;
+    padding: 2px;
     border-bottom: 2px solid white !important;
 }
 

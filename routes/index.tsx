@@ -1,9 +1,14 @@
 //import Input from "../components/Input.tsx";
+import { useSignal, effect } from "@preact/signals";
+
 
 export default function Home() {
+  const className = useSignal<string>('');
+  const loaded = useSignal<boolean>(false);
+
   return (
     <>
-      <div className={`${(window?.matchMedia && window.matchMedia('(display-mode: standalone)').matches) ? "index__pwa" : "index"}`} style={{display: "flex", justifyContent: "center", alignItems: "center", flexDirection: "column"}}>
+      <div style={{display: "flex", justifyContent: "center", alignItems: "center", flexDirection: "column"}}>
         <div style={{display: "flex", gap: "1em"}}>
           <h1 className="index__heading" style={{fontSize: "3rem", fontFamily: "headingFont"}}>
             purple room chats
