@@ -1,9 +1,5 @@
 .index {
-    margin-top: 2em;
-}
-
-.index__pwa {
-    margin-top: 5px;
+    margin-top: 4em;
 }
 
 @media (max-width: 600px) {
