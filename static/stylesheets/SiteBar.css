@@ -4,13 +4,27 @@
     justify-content: center;
     gap: 2em;
     height: 45px;
-    left: 0;
-    top: 0;
     background-color: #7F00FF;
-    border-bottom: 2px solid white;
+    
     z-index: 100;
     position: fixed;
     min-width: 100vw;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.siteBar__top {
+    left: 0;
+    top: 0;
+    border-bottom: 2px solid white;
+}
+
+.siteBar_bottom {
+    border-top: 2px solid white;
+    left: 0;
+    bottom: 0;
 }
 
 .siteBar__disabledLink {

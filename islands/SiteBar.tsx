@@ -17,7 +17,7 @@ const SiteBar = () => {
         }
     }, [])
 
-    return (<nav className="siteBar">
+    return (<nav className={`siteBar ${window?.matchMedia ? (window?.matchMedia('(display-mode: standalone)').matches ? "siteBar__bottom" : "siteBar__top") : 'hidden'}`}>
         <div className="siteBar__linkContainer">
             <a className="siteBar__link" href="/">Home</a>
             {currentPage.value === "home" && <img alt="Selected Navbar Item" style={{height: 10, width: 10}} src="/images/chevron-up.png" />}
