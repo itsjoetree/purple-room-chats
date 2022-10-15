@@ -3,7 +3,7 @@
 }
 
 .index__pwa {
-    margin-top: 0;
+    margin-top: 0px !important;
 }
 
 @media (max-width: 600px) {
