@@ -16,7 +16,7 @@ export default function Home() {
           <img className="index__sun" src="/images/the-sun.webp" style={{borderRadius: "50%", width: 300, height: 300}} />
         </div>
 
-        <h2 style={{fontFamily: "headingFont", fontSize: "2em"}}>in development</h2>
+        <h2 style={{fontFamily: "headingFont", fontSize: "2em"}}>in development 👨🏻‍💻</h2>
       </div>
     </>
   );
