@@ -16,7 +16,17 @@ export default function Home() {
           <img className="index__sun" src="/images/the-sun.webp" style={{borderRadius: "50%", width: 300, height: 300}} />
         </div>
 
-        <h2 style={{fontFamily: "headingFont", fontSize: "2em"}}>in development 👨🏻‍💻</h2>
+        <h2 style={{margin: 0, fontFamily: "headingFont", fontSize: "2em"}}>in development 👨🏻‍💻</h2>
+        <p>
+          A low key media site for the hotties, developed by Joe Tree
+        </p>
+
+        <h3 style={{fontFamily: "headingFont", fontSize: "1.5em", margin: 0}}>upcoming features</h3>
+
+        <ul>
+          <li>User profiles, where we can have our own content/posts, profile photo, bio.</li>
+          <li>Interface to create, edit and delete posts with images/links.</li>
+        </ul>
       </div>
     </>
   );
