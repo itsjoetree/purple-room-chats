@@ -3,7 +3,7 @@
 export default function Home() {
   return (
     <>
-      <div className={`index ${window?.matchMedia ? (window?.matchMedia('(display-mode: standalone)').matches ? "index__pwa" : '') : ''}`} style={{display: "flex", justifyContent: "center", alignItems: "center", flexDirection: "column"}}>
+      <div className={`${window?.matchMedia ? (window?.matchMedia('(display-mode: standalone)').matches ? "index__pwa" : '') : ''}`} style={{display: "flex", justifyContent: "center", alignItems: "center", flexDirection: "column"}}>
         <div style={{display: "flex", gap: "1em"}}>
           <h1 className="index__heading" style={{fontSize: "3rem", fontFamily: "headingFont"}}>
             purple room chats
