@@ -1,0 +1,18 @@
+{
+    "name": "purple room chats",
+    "short_name": "PRC",
+    "theme_color": "#7F00FF",
+    "background_color": "#7F00FF",
+    "display": "fullscreen",
+    "scope": "/",
+    "start_url": "/",
+    "orientation": "any",
+    "icons": [
+        { 
+            "src": "/images/manifest.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "image/png"
+        }
+    ]
+}

@@ -22,16 +22,6 @@ const SiteBar = () => {
             <a className="siteBar__link" href="/">Home</a>
             {currentPage.value === "home" && <img alt="Selected Navbar Item" style={{height: 10, width: 10}} src="/images/chevron-up.png" />}
         </div>
-
-        <div className="siteBar__linkContainer">
-            <a className="siteBar__link" href="/music">Podcast</a>
-            {currentPage.value === "podcast" && <img alt="Selected Navbar Item" style={{height: 10, width: 10}} src="/images/chevron-up.png" />}
-        </div>
-
-        <div className="siteBar__linkContainer">
-            <a className="siteBar__link" href="/games">Chats</a>
-            {currentPage.value === "chats" && <img alt="Selected Navbar Item" style={{height: 10, width: 10}} src="/images/chevron-up.png" />}
-        </div>
     </nav>)
 }
 
