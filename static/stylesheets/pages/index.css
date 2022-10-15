@@ -26,3 +26,15 @@
         height: 250px !important;
     }
 }
+
+.download {
+    text-align: center;
+    width: 8em;
+    border-radius: 15px;
+    background: #7F00FF;
+    border: 1px solid white;
+    color: white;
+    padding: 10px;
+    margin-bottom: 15px;
+    cursor: pointer;
+}

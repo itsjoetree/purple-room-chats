@@ -75,7 +75,7 @@ export default function App(props: AppProps) {
       </script>
     </Head>
     
-    <body id="main" style={{marginTop: "4em"}} className="app__body bodyClass">
+    <body id="main">
         <SiteBar />
         <props.Component />
     </body>

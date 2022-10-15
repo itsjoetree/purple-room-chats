@@ -3,7 +3,7 @@
 export default function Home() {
   return (
     <>
-      <div style={{marginTop: "3.5em", marginBottom: "3em", display: "flex", justifyContent: "center", alignItems: "center", flexDirection: "column"}}>
+      <div style={{marginTop: "2em", marginBottom: "3em", display: "flex", justifyContent: "center", alignItems: "center", flexDirection: "column"}}>
         <div style={{display: "flex", gap: "1em"}}>
           <h1 className="index__heading" style={{fontSize: "3rem", fontFamily: "headingFont"}}>
             purple room chats
