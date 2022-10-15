@@ -1,19 +1,4 @@
 import { HandlerContext } from "$fresh/server.ts";
-import { DB } from "https://deno.land/x/sqlite@v3.5.0/mod.ts";
-
-const db = new DB("purple.db");
-
-db.execute(`
-  CREATE TABLE IF NOT EXISTS [Users] (
-    [Id] INTEGER PRIMARY KEY AUTOINCREMENT,
-    [Username] TEXT NOT NULL,
-    [Password] TEXT NOT NULL,
-    [Website] TEXT NOT NULL,
-    [Verified] INTEGER NOT NULL,
-    [Profile Color] TEXT,
-    [Profile Background] TEXT
-  )
-`);
 
 // Jokes courtesy of https://punsandoneliners.com/randomness/programmer-jokes/
 const JOKES = [
@@ -30,8 +15,6 @@ const JOKES = [
 ];
 
 export const handler = (_req: Request, _ctx: HandlerContext): Response => {
-
-
   const randomIndex = Math.floor(Math.random() * JOKES.length);
   const body = JOKES[randomIndex];
   return new Response(body);
