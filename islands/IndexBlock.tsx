@@ -12,7 +12,7 @@ const IndexBlock = () => {
           <img className="index__sun" src="/images/the-sun.webp" style={{borderRadius: "50%", width: 300, height: 300}} />
         </div>
 
-        <h2 style={{margin: 0, fontFamily: "headingFont", fontSize: "2em"}}>in development 👨🏻‍💻</h2>
+        <h2 style={{margin: 0, fontFamily: "headingFont", fontSize: "2em", textAlign: "center"}}>in development 👨🏻‍💻</h2>
         <p style={{textAlign: "center", maxWidth: 300}}>
           A low key media site for the hotties, developed by <a style="color: white;" href="https://joesalinas.dev">Joe Tree</a>
         </p>
