@@ -1,5 +1,5 @@
-import { useSignal, effect } from "@preact/signals";
-import { useRef } from "preact/hooks";
+import { useSignal } from "@preact/signals";
+import { Head } from "$fresh/runtime.ts";
 
 const SELECTED_BUTTON = {
     background: "white",
@@ -10,21 +10,25 @@ const NewPost = () => {
     const view = useSignal<string>("code");
     const lines = useSignal<string[]>([]);
 
-    return (<div style={{display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center"}}>
-        <h1 style={{fontFamily: "headingFont"}}>spill the tea</h1>
+    return (<div className="NewPost__container">
+        <Head>
+            <link href="/stylesheets/NewPost.css" rel="stylesheet" />
+        </Head>
+
+        <h1>spill the tea</h1>
 
         <div className="NewPost">
             <div className="NewPost__options">
                 <button>
-                    Insert Image <img alt="Camera Icon" src="/images/camera.png" style={{alignSelf: "center", width: 15, height: 15}} />
+                    Insert Image <img className="NewPost__button-image" alt="Camera Icon" src="/images/camera.png" />
                 </button>
 
                 <button>
-                    Add Link <img alt="Camera Icon" src="/images/link.png" style={{alignSelf: "center", width: 15, height: 15}} />
+                    Add Link <img className="NewPost__button-image" alt="Camera Icon" src="/images/link.png" />
                 </button>
             </div>
 
-            <div style={{width: "100%", display: "flex", alignItems: "center", justifyContent: "center", flexDirection: "column"}}>
+            <div className="NewPost__switch-container">
                 <div className="NewPost__switch">
                     <button onClick={() => view.value = "code"} style={view.value === "code" ? SELECTED_BUTTON : {}}>
                         Code
@@ -35,8 +39,28 @@ const NewPost = () => {
                     </button>
                 </div>
 
-                <textarea onChange={(e) => lines.value = e.currentTarget.value?.split("\n")} rows={20} className="NewPost__textarea" />
             </div>
+
+            {
+                view.value === "preview" && <div className="NewPost__preview">
+                    <div style={{display: "flex", gap: 10, marginBottom: 5}}>
+                        <div style={{border: "2px solid white", borderRadius: "50%", width: 35, height: 35}} />
+                        <span style={{alignSelf: "center"}}>itsjoetree</span>
+                    </div>
+
+
+                    {
+                        lines.value.map((l) => <div>{l}</div>)
+                    }
+                </div>
+            }
+
+            
+            {
+                view.value === "code" && <div className="NewPost__textarea-container">
+                    <textarea className="NewPost__textarea" value={lines.value.map(l => l)} onChange={(e) => lines.value = e.currentTarget.value?.split("\n")} rows={19} />
+                </div>
+            }
 
             <button className="NewPost__button">Post it!</button>
         </div>

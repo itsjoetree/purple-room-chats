@@ -6,6 +6,18 @@
     margin-top: 0 !important;
 }
 
+.index__bubble {
+    align-self: center;
+    width: 40px;
+    height: 40px;
+}
+
+.index__sun {
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+}
+
 @media (max-width: 600px) {
     .index__heading {
         font-size: 2em !important;

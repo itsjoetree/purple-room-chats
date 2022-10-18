@@ -1,0 +1,16 @@
+.IndexBlock {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.IndexBlock__heading-container {
+    display: flex;
+    gap: 1em;
+}
+
+.IndexBlock__development {
+    margin: 0;
+    text-align: center;
+}

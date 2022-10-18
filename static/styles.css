@@ -15,10 +15,36 @@ body {
     margin:0px;
     margin-top:10px;
     padding: 0px;
-    min-height: 100vh;
     margin-bottom: 25px;
+}
+
+h1, h2, h3 {
+    font-family: headingFont;
 }
 
 nav {
     font-family: headingFont;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+h3 {
+    font-size: 1.5em;
+}
+
+.button-styles {
+    width: 12em;
+    border-radius: 15px;
+    background: #7F00FF;
+    border: 1px solid white;
+    color: white;
+    padding: 10px;
+    margin-bottom: 15px;
+    cursor: pointer;
 }

@@ -1,9 +1,15 @@
 import IndexBlock from "../islands/IndexBlock.tsx";
+import { Head } from "$fresh/runtime.ts";
+
 export default function Home() {
 
   return (
-    <>
-      <IndexBlock />
-    </>
+      <>
+        <Head>
+          <link href="/stylesheets/pages/index.css" rel="stylesheet" />
+        </Head>
+
+        <IndexBlock />
+      </>
   );
 }

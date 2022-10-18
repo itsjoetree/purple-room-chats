@@ -1,5 +1,6 @@
-import { useEffect } from "preact/hooks"
-import { useSignal } from "@preact/signals"
+import { useEffect } from "preact/hooks";
+import { useSignal } from "@preact/signals";
+import { Head } from "$fresh/runtime.ts";
 
 const SiteBar = () => {
     const currentPage = useSignal('');
@@ -18,6 +19,10 @@ const SiteBar = () => {
     }, [])
 
     return (<nav className={`siteBar ${window?.matchMedia ? (window?.matchMedia('(display-mode: standalone)').matches ? "siteBar__bottom" : "siteBar__top") : 'hidden'}`}>
+        <Head>
+            <link href="/stylesheets/SiteBar.css" rel="stylesheet" />
+        </Head>
+        
         <div className="siteBar__linkContainer">
             <a className="siteBar__link" href="/">Home</a>
             {currentPage.value === "home" && <img alt="Selected Navbar Item" style={{height: 10, width: 10}} src="/images/chevron-up.png" />}

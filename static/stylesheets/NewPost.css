@@ -1,24 +1,29 @@
+.NewPost__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 .NewPost {
     border: 1px solid white;
     border-radius: 5px;
     padding: 5px;
+}
+
+.NewPost__switch-container {
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    gap: 15px;
+    margin-top: 1em;
 }
 
-@media (min-width: 601px) {
-    .NewPost {
-        width: 65vw !important;
-    }
-}
-
-@media (max-width: 600px) {
-    .NewPost {
-        width: 90vw !important;
-    }
+.NewPost__button-image {
+    align-self: center;
+    width: 15px;
+    height: 15px;
 }
 
 .NewPost__options {
@@ -47,12 +52,30 @@
     gap: 2px;
 }
 
+.NewPost__textarea-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
 .NewPost__textarea {
+    padding: 10px;
     color: #7F00FF;
     width: 100%;    
     resize: none;
     border: none;
-    border-radius: 5px;
+    border-radius: 12px;
+}
+
+.NewPost__preview {
+    text-align: left; 
+    height: 282px;
+    border: 1px solid white;
+    border-radius: 12px;
+    padding: 15px;
+    margin-bottom: 15px;
+    overflow-y: scroll;
 }
 
 .NewPost__textarea:focus {
@@ -68,6 +91,9 @@
     padding: 10px;
     margin-bottom: 15px;
     cursor: pointer;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .NewPost__button:hover {
@@ -90,6 +116,18 @@
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
     cursor: pointer;
+}
+
+@media (min-width: 601px) {
+    .NewPost {
+        width: 65vw !important;
+    }
+}
+
+@media (max-width: 600px) {
+    .NewPost {
+        width: 90vw !important;
+    }
 }
 
 @media (max-width: 400px) {

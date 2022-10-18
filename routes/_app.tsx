@@ -3,15 +3,12 @@ import { AppProps } from "$fresh/server.ts";
 import SiteBar from "../islands/SiteBar.tsx";
 
 export default function App(props: AppProps) {
+
   return (<html>
     <Head>
       <title>purple room chats</title>
       <link href="/styles.css" rel="stylesheet" />
-      <link href="/stylesheets/pages/index.css" rel="stylesheet" />
-      <link href="/stylesheets/pages/post.css" rel="stylesheet" />
-      <link href="/stylesheets/NewPost.css" rel="stylesheet" />
-      <link href="/stylesheets/Input.css" rel="stylesheet" />
-      <link href="/stylesheets/SiteBar.css" rel="stylesheet" />
+
       <meta charSet="UTF-8" />
       <meta name="description" content="Purple room chats" />
       <meta name="keywords" content="Podcast, Chats" />

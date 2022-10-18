@@ -21,5 +21,33 @@ export interface IUser {
     password: string;
     imgUri?: string;
     bio?: string;
+    theme?: string;
     isVerified: boolean;
 }
+
+export interface IMutualRelation {
+    _id?: ObjectId;
+    followed: string;
+    following: string;
+}
+
+export interface IComment {
+    _id?: ObjectId;
+    postId: ObjectId;
+    author: string;
+    content: string;
+}
+
+export interface ILikeRelation {
+    _id?: ObjectId;
+    postId: ObjectId;
+    likedBy: string;
+}
+
+export interface IPost {
+    _id?: ObjectId;
+    author: string;
+    content: string;
+    isPhotoPost: boolean;
+}
+
