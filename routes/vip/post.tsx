@@ -9,6 +9,8 @@ const Post = () => {
                 <title>purple room chats - Post</title>
                 <link href="/stylesheets/pages/post.css" rel="stylesheet" />
             </Head>
+            
+            <h1>spill the tea</h1>
 
             <NewPost />
         </div>

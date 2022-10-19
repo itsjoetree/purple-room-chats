@@ -48,3 +48,9 @@ h3 {
     margin-bottom: 15px;
     cursor: pointer;
 }
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

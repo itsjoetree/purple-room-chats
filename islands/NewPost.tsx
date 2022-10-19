@@ -1,21 +1,72 @@
-import { useSignal } from "@preact/signals";
+import { useSignal, effect } from "@preact/signals";
 import { Head } from "$fresh/runtime.ts";
+import { VNode } from "https://esm.sh/v95/preact@10.11.0/src/index.d.ts";
 
 const SELECTED_BUTTON = {
     background: "white",
     color: "#7F00FF"
 }
 
+const getPostMarkup = (data: string) : VNode[] => {
+    const elements: string[] = [];
+
+    let index = 0;
+    const max = data.split('')?.length - 1;
+
+    if (max <= 0) return [];
+
+    let divText = '';
+
+    data.split('').forEach(char => {
+        if (char === "\n" || index === max) {
+            divText += char;            
+            elements.push(divText);
+
+            if (index === max) return;
+            divText = '';
+        }
+        else {
+            divText += char;
+        }
+
+        index++;
+    });
+
+    return elements.map((e, i) => {
+        if (e.substring(0, 6) === "image(" && e.split('')[e.split('').length - 1] === ")") {
+            const [url, width, height] = e.replace('image(', '').replace(')', '').split(', ');
+
+            let numWidth = null;
+            let numHeight = null;
+
+            try {
+                numWidth = parseInt(width);
+            }
+            catch {
+                // continue
+            }
+
+            try {
+                numHeight = parseInt(height);
+            }
+            catch {
+                // continue
+            }
+
+            return (<img style={{url: url, width: numWidth ?? width, height: numHeight ?? height}} alt="Post Image" src={url} />);
+        }  
+        else return (<div key={`${e}index:${i}`}>{e}</div>);
+    });
+}
+
 const NewPost = () => {
     const view = useSignal<string>("code");
-    const lines = useSignal<string[]>([]);
+    const lines = useSignal<string>('');
 
     return (<div className="NewPost__container">
         <Head>
             <link href="/stylesheets/NewPost.css" rel="stylesheet" />
         </Head>
-
-        <h1>spill the tea</h1>
 
         <div className="NewPost">
             <div className="NewPost__options">
@@ -48,17 +99,17 @@ const NewPost = () => {
                         <span style={{alignSelf: "center"}}>itsjoetree</span>
                     </div>
 
-
                     {
-                        lines.value.map((l) => <div>{l}</div>)
+                        getPostMarkup(lines.value).map((m) => m)
                     }
                 </div>
             }
-
             
             {
                 view.value === "code" && <div className="NewPost__textarea-container">
-                    <textarea className="NewPost__textarea" value={lines.value.map(l => l)} onChange={(e) => lines.value = e.currentTarget.value?.split("\n")} rows={19} />
+                    <textarea className="NewPost__textarea" value={lines.value} onChange={(e) => {
+                         lines.value = e.currentTarget.value;
+                    }} rows={19} />
                 </div>
             }
 

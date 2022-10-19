@@ -42,7 +42,7 @@ const Profile = ({params, data} : PageProps)  => {
                 <div>
                     <h3 style={{margin: 0}}>{params?.username}</h3>
                     <span>
-                        {data?.bio}
+                        yoo i be in the woods
                     </span>
                 </div>
             </div>
