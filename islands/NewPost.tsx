@@ -54,7 +54,7 @@ const getPostMarkup = (data: string) : VNode[] => {
                 // continue
             }
 
-            return (<img style={{url: url, width: numWidth ?? width, height: numHeight ?? height}} alt="Post Image" src={url} />);
+            return (<img style={{maxWidth: "100%", url: url, width: numWidth ?? width, height: numHeight ?? height}} alt="Post Image" src={url} />);
         }  
         else return (<div key={`${e}index:${i}`}>{e}</div>);
     });
