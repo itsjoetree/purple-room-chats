@@ -1,5 +1,4 @@
 import { Handlers, PageProps } from "$fresh/server.ts";
-import { authenticate } from "../authentication.ts";
 import Post from "../islands/Post.tsx";
 
 export const handler: Handlers = {
