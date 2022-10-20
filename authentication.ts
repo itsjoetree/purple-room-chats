@@ -1,7 +1,7 @@
 import { IAuthorization, IAuthToken } from "./interfaces.d.ts";
 
 export const authenticate = async (accessToken?: IAuthToken) : Promise<string | null> => {
-    const refreshToken = localStorage.getItem("refreshToken");
+    const refreshToken = localStorage?.getItem("refreshToken");
 
     const date = Date.now() / 1000;
 
