@@ -3,8 +3,8 @@ import { authenticate } from "../authentication.ts";
 import Post from "../islands/Post.tsx";
 
 export const handler: Handlers = {
-    GET(_req, ctx) {
-        const isAuth = false;
+    async GET(_req, ctx) {
+        const isAuth = await authenticate();
 
         if (!isAuth) {
             return ctx.renderNotFound();
