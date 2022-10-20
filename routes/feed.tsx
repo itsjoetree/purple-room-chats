@@ -5,13 +5,9 @@ import { authenticate } from "../authentication.ts";
 
 export const handler: Handlers = {
     GET(_req, ctx) {
-        try {
-            const isAuth = localStorage?.getItem("refreshToken");
-        }
-        catch {
-            return ctx.renderNotFound();
-        }
+        const isAuth = false;
 
+        if (!isAuth) return ctx.renderNotFound();
         return ctx.render();
     },
 };

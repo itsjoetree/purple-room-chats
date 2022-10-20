@@ -4,14 +4,9 @@ import Post from "../islands/Post.tsx";
 
 export const handler: Handlers = {
     GET(_req, ctx) {
+        const isAuth = false;
 
-        try {
-            const isAuth = localStorage?.getItem("refreshToken");
-        }
-        catch {
-            return ctx.renderNotFound();
-        }
-
+        if (!isAuth) return ctx.renderNotFound();
         return ctx.render();
     }
 };

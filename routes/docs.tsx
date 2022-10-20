@@ -17,7 +17,7 @@ const Docs = () => {
         </div>
 
         <div style={{marginBottom: ".5em"}} className="flex-center">
-            <div style={{width: 500}}>
+            <div style={{width: 500, textAlign: "center"}}>
                 Here she is, simple enough but with some features under the hood that will
                 allow you to create posts exactly how you would envision them to.
             </div>
