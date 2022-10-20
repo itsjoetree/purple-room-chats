@@ -39,7 +39,7 @@ const Docs = () => {
             <span style={{padding: "2px 5px 2px 5px", borderRadius: 12, background: "white", color: "#7F00FF"}}>image(url, width, height)</span>
         </div>
 
-        <div style={{marginBottom: "1em", textAlign: "center"}} className="flex-center">
+        <div style={{marginBottom: "1em", textAlign: "center"}}>
             The url can be an image from another site where you can "Copy Image Url", or a Url that is generated after uploading from
             your camera roll by clicking:
         </div>
@@ -50,7 +50,7 @@ const Docs = () => {
             </div>
         </div>
 
-        <div style={{marginBottom: "1em", textAlign: "center"}} className="flex-center">
+        <div style={{marginBottom: "1em", textAlign: "center"}}>
             Width and height can both be numeric such as the examples below, but can also use CSS units of measure. If you wish
             to skip over "width" you can place the value "null" which means nothing instead of a measurement such as: 
         </div>
