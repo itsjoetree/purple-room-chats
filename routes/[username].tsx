@@ -1,35 +1,16 @@
 import { Handlers, PageProps } from "$fresh/server.ts";
-import { IUser } from "../interfaces.d.ts";
+import { authenticate } from "../authentication.ts";
 import Post from "../islands/Post.tsx";
 
-export const handler: Handlers<IUser> = {
+export const handler: Handlers = {
     async GET(_req, ctx) {
-        const BASE_URI = `https://data.mongodb-api.com/app/${Deno.env.get("APP_ID")}/endpoint/data/v1/action`;
-        const DATA_SOURCE = "PurpleRoom";
-        const DATABASE = "PurpleRoom";
-        const COLLECTION = "users";
+        const isAuth = await authenticate();
 
-        const options = {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json",
-                "api-key": Deno.env.get("DATA_API_KEY") ?? ""
-            },
-            body: ""
+        if (!isAuth) {
+            return ctx.renderNotFound();
         }
 
-        const query = {
-            collection: COLLECTION,
-            database: DATABASE,
-            dataSource: DATA_SOURCE,
-        }
-
-        options.body = JSON.stringify(query);
-
-        const result = await fetch(BASE_URI + "/findOne", options);
-        console.log(await result.json());
-
-        return ctx.render({} as IUser);
+        return ctx.render();
     },
 };
 
@@ -40,9 +21,9 @@ const Profile = ({params, data} : PageProps)  => {
                 <div style={{border: "2px solid white", borderRadius: "50%", width: 75, height: 75}} />
                 
                 <div>
-                    <h3 style={{margin: 0}}>{params?.username}</h3>
+                    <h3 style={{margin: 0}}>{/*params?.username*/}</h3>
                     <span>
-                        yoo i be in the woods
+                        {/*params?.bio*/}
                     </span>
                 </div>
             </div>

@@ -63,7 +63,7 @@ const Docs = () => {
 
         <div className="flex-center">
             <div style={{width: 500, marginBottom: "1em", textAlign: "center", wordBreak: "break-word", padding: "2px 5px 2px 5px", borderRadius: 12, background: "white", color: "#7F00FF"}}>
-                image(https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg, <span style={{paddingLeft: 3, paddingRight: 3, color: "white", background: "#7F00FF"}}>null</span>, 200)
+                image(https://joesalinas.dev/images/nature/10-8-ivy.webp?__frsh_c=6gaz88w64c2g, <span style={{paddingLeft: 3, paddingRight: 3, color: "white", background: "#7F00FF"}}>null</span>, 200)
             </div>
         </div>
 
@@ -73,25 +73,25 @@ const Docs = () => {
 
         <div className="flex-center">
             <div style={{width: 500, marginBottom: "1em", textAlign: "center", wordBreak: "break-word", padding: "2px 5px 2px 5px", borderRadius: 12, background: "white", color: "#7F00FF"}}>
-                image(https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg)
+                image(https://joesalinas.dev/images/nature/10-8-ivy.webp?__frsh_c=6gaz88w64c2g)
             </div>
         </div>
 
         <div className="flex-center">
             <div style={{width: 500, marginBottom: "1em", textAlign: "center", wordBreak: "break-word", padding: "2px 5px 2px 5px", borderRadius: 12, background: "white", color: "#7F00FF"}}>
-                image(https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg, null, 200)
+                image(https://joesalinas.dev/images/nature/10-8-ivy.webp?__frsh_c=6gaz88w64c2g, null, 200)
             </div>
         </div>
 
         <div className="flex-center">
             <div style={{width: 500, marginBottom: "1em", textAlign: "center", wordBreak: "break-word", padding: "2px 5px 2px 5px", borderRadius: 12, background: "white", color: "#7F00FF"}}>
-                image(https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg, 200, null)
+                image(https://joesalinas.dev/images/nature/10-8-ivy.webp?__frsh_c=6gaz88w64c2g, 200, null)
             </div>
         </div>
 
         <div className="flex-center">
             <div style={{width: 500, marginBottom: "1em", textAlign: "center", wordBreak: "break-word", padding: "2px 5px 2px 5px", borderRadius: 12, background: "white", color: "#7F00FF"}}>
-                image(https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg, 300, 200)
+                image(https://joesalinas.dev/images/nature/10-8-ivy.webp?__frsh_c=6gaz88w64c2g, 200, 200)
             </div>
         </div>
 

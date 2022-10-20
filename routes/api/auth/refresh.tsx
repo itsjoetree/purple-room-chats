@@ -6,7 +6,7 @@ import { getAuthorization } from "../helpers.ts";
 export const handler = async (req: Request, _ctx: HandlerContext): Promise<Response> => {
     if (!req.headers.has("Authorization")) throw new Error("Unauthorized");
 
-    const jwt = req.headers.get("Authorization");
+    const jwt = req.headers.get("Authorization")?.split(' ')[1];
     if (jwt == null) throw new Error("Unauthorized");
 
     const key = await crypto.subtle.generateKey(

@@ -1,5 +1,19 @@
+import { Handlers, PageProps } from "$fresh/server.ts";
 import { Head } from "$fresh/runtime.ts";
 import Post from "../islands/Post.tsx";
+import { authenticate } from "../authentication.ts";
+
+export const handler: Handlers = {
+    async GET(_req, ctx) {
+        const isAuth = await authenticate();
+
+        if (!isAuth) {
+            return ctx.renderNotFound();
+        }
+
+        return ctx.render();
+    },
+};
 
 const Feed = () => {
     
