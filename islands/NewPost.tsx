@@ -19,7 +19,7 @@ const getPostMarkup = (data: string) : VNode[] => {
 
     data.split('').forEach(char => {
         if (char === "\n" || index === max) {
-            divText += char;            
+            if (char !== "\n") divText += char;            
             elements.push(divText);
 
             if (index === max) return;
