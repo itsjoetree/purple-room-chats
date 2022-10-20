@@ -7,7 +7,7 @@ export const handler: Handlers = {
     async GET(_req, ctx) {
         const isAuth = await authenticate();
 
-        if (!isAuth) {
+        if (isAuth == null) {
             return ctx.renderNotFound();
         }
 
