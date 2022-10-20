@@ -37,7 +37,9 @@
     width: 100%;
 }
 
-.NewPost__options button {
+.NewPost__options button,
+.NewPost__options-button
+{
     min-width: 8em;
     border-radius: 15px;
     background: #7F00FF;

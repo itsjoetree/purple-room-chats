@@ -76,13 +76,23 @@ const NewPost = ({ isPreview, previewValue } : NewPostProps) => {
 
         <div className="NewPost">
             <div className="NewPost__options">
-                <button>
-                    Insert Image <img className="NewPost__button-image" alt="Camera Icon" src="/images/camera.png" />
-                </button>
+                <div>
+                    <label className="NewPost__options-button" title="Upload" htmlFor="file-input">
+                        Insert Image <img className="NewPost__button-image" alt="Camera Icon" src="/images/camera.png" />
+                    </label>
 
-                <button>
+                    <input onChange={(e) => {
+                        if (e.currentTarget.files) {
+                            const fileUrl = URL.createObjectURL(e.currentTarget.files[0]);
+                            lines.value += `\nimage(${fileUrl})`;
+                        }
+
+                    }} style={{visibility: "hidden", width: 0, height: 0, position: "absolute"}} /*ref={imageRef} onChange={(e: any) => updateFileDep(e)}*/ id="file-input" type="file" accept="image/png, image/jpeg" />
+                </div>
+
+                <span className="NewPost__options-button">
                     Add Link <img className="NewPost__button-image" alt="Camera Icon" src="/images/link.png" />
-                </button>
+                </span>
             </div>
 
             <div className="NewPost__switch-container">
