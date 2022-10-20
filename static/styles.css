@@ -58,3 +58,6 @@ h3 {
     justify-content: center;
     align-items: center;
 }
+
+textarea { font-size: 15px; }
+input { font-size: 15px; }
