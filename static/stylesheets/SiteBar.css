@@ -5,6 +5,7 @@
     padding: 5px;
     width: 100%;
     background-color: #7F00FF;
+    z-index: 1000;
 }
 
 .hidden {
