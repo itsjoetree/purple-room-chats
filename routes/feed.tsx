@@ -5,9 +5,10 @@ import { authenticate } from "../authentication.ts";
 
 export const handler: Handlers = {
     GET(_req, ctx) {
-        const isAuth = localStorage?.getItem("refreshToken");
-
-        if (isAuth == null) {
+        try {
+            const isAuth = localStorage?.getItem("refreshToken");
+        }
+        catch {
             return ctx.renderNotFound();
         }
 
