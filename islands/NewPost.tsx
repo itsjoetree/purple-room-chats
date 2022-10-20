@@ -61,11 +61,12 @@ const getPostMarkup = (data: string) : VNode[] => {
 
 interface NewPostProps {
     isPreview?: boolean;
+    previewValue?: string;
 }
 
-const NewPost = ({ isPreview } : NewPostProps) => {
+const NewPost = ({ isPreview, previewValue } : NewPostProps) => {
     const view = useSignal<string>("code");
-    const lines = useSignal<string>('');
+    const lines = useSignal<string>(previewValue ?? '');
 
     return (<div className="NewPost__container">
         <Head>
@@ -98,7 +99,7 @@ const NewPost = ({ isPreview } : NewPostProps) => {
 
             {
                 view.value === "preview" && <div className="NewPost__preview">
-                    <div style={{display: "flex", gap: 10, marginBottom: 5}}>
+                    <div style={{display: "flex", gap: 10}}>
                         <div style={{border: "2px solid white", borderRadius: "50%", width: 35, height: 35}} />
                         <span style={{alignSelf: "center"}}>itsjoetree</span>
                     </div>

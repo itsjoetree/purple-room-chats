@@ -96,7 +96,7 @@ const Docs = () => {
         </div>
 
         <div className="flex-center">
-            <NewPost isPreview />
+            <NewPost isPreview previewValue="image(https://joesalinas.dev/images/nature/10-8-ivy.webp?__frsh_c=6gaz88w64c2g)" />
         </div>
     </div>)
 }
