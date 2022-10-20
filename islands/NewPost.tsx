@@ -85,7 +85,8 @@ const NewPost = ({ isPreview, previewValue } : NewPostProps) => {
                     <input onChange={(e) => {
                         if (e.currentTarget.files) {
                             const fileUrl = URL.createObjectURL(e.currentTarget.files[0]);
-                            lines.value += `\nimage(${fileUrl})`;
+                            if (lines.value) lines.value += `\n`;
+                            lines.value += `image(${fileUrl})`;
                         }
 
                     }} style={{visibility: "hidden", width: 0, height: 0, position: "absolute"}} id="file-input" type="file" accept="image/png, image/jpeg" />

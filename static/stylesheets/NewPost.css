@@ -1,8 +1,5 @@
 .NewPost__container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    width: 700px;
 }
 
 .NewPost {
@@ -121,20 +118,3 @@
     cursor: pointer;
 }
 
-@media (min-width: 601px) {
-    .NewPost {
-        width: 65vw !important;
-    }
-}
-
-@media (max-width: 600px) {
-    .NewPost {
-        width: 90vw !important;
-    }
-}
-
-@media (max-width: 400px) {
-    .NewPost__switch button {
-        width: 6em !important;
-    }
-}
