@@ -21,6 +21,14 @@ const IndexBlock = () => {
           A low key media site for the hotties, developed by <a style="color: white;" href="https://joesalinas.dev">Joe Tree</a>
         </p>
 
+        <h2 className="IndexBlock__development">Progress Notes 🧙🏼‍♂️</h2>
+
+        <ul>
+          <li>Progress on profile, feed and post interfaces.</li>
+          <li>Made <a style={{color: "white"}} href="/docs">docs</a> page for posting on the site.</li>
+          <li>Started building user authentication system.</li>
+        </ul>
+
         <h3 style={{margin: 0}}>upcoming features</h3>
 
         <ul>
