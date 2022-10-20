@@ -3,15 +3,15 @@ import { authenticate } from "../authentication.ts";
 import Post from "../islands/Post.tsx";
 
 export const handler: Handlers = {
-    async GET(_req, ctx) {
-        const isAuth = await authenticate();
+    GET(_req, ctx) {
+        const isAuth = false;
 
         if (!isAuth) {
             return ctx.renderNotFound();
         }
 
         return ctx.render();
-    },
+    }
 };
 
 const Profile = ({params, data} : PageProps)  => {
