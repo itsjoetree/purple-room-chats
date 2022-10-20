@@ -60,13 +60,12 @@
 
 .NewPost__textarea {
     padding: 10px;
-    padding-bottom: 9px;
     color: #7F00FF;
     width: 100%;    
     resize: none;
     border: none;
     border-radius: 12px;
-    height: 301px;
+    height: 300px;
 }
 
 .NewPost__preview {
