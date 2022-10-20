@@ -99,7 +99,7 @@ const NewPost = ({ isPreview, previewValue } : NewPostProps) => {
 
             {
                 view.value === "preview" && <div className="NewPost__preview">
-                    <div style={{display: "flex", gap: 10}}>
+                    <div style={{display: "flex", gap: 10, marginBottom: 5}}>
                         <div style={{border: "2px solid white", borderRadius: "50%", width: 35, height: 35}} />
                         <span style={{alignSelf: "center"}}>itsjoetree</span>
                     </div>
@@ -114,7 +114,7 @@ const NewPost = ({ isPreview, previewValue } : NewPostProps) => {
                 view.value === "code" && <div className="NewPost__textarea-container">
                     <textarea className="NewPost__textarea" value={lines.value} onChange={(e) => {
                          lines.value = e.currentTarget.value;
-                    }} rows={19} />
+                    }} />
                 </div>
             }
 

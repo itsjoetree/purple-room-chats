@@ -56,7 +56,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 15px;
 }
 
 .NewPost__textarea {
@@ -66,15 +65,15 @@
     resize: none;
     border: none;
     border-radius: 12px;
+    height: 300px;
 }
 
 .NewPost__preview {
     text-align: left; 
-    height: 302px;
+    height: 300px;
     border: 1px solid white;
     border-radius: 12px;
     padding: 10px;
-    margin-bottom: 15px;
     overflow-y: scroll;
 }
 
