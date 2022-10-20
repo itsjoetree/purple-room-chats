@@ -16,11 +16,9 @@ const Docs = () => {
             <h1 style={{marginTop: ".5em", marginBottom: 0}}>The Interface</h1>
         </div>
 
-        <div style={{marginBottom: ".3em"}} className="flex-center">
-            <div style={{fontSize: 15, maxWidth: 500, textAlign: "center"}}>
-                Here she is, simple enough but with some features under the hood that will
-                allow you to create posts exactly how you would envision them to.
-            </div>
+        <div style={{marginBottom: ".3em", textAlign: "center"}}>
+            Here she is, simple enough but with some features under the hood that will
+            allow you to create posts exactly how you would envision them to.
         </div>
 
         <div className="flex-center">
