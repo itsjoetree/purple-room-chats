@@ -39,24 +39,20 @@ const Docs = () => {
             <span style={{padding: "2px 5px 2px 5px", borderRadius: 12, background: "white", color: "#7F00FF"}}>image(url, width, height)</span>
         </div>
 
-        <div style={{marginBottom: "1em"}} className="flex-center">
-            <div style={{width: 500, textAlign: "center"}}>
-                The url can be an image from another site where you can "Copy Image Url", or a Url that is generated after uploading from
-                your camera roll by clicking:
-            </div>
+        <div style={{marginBottom: "1em", textAlign: "center"}} className="flex-center">
+            The url can be an image from another site where you can "Copy Image Url", or a Url that is generated after uploading from
+            your camera roll by clicking:
         </div>
 
         <div style={{marginBottom: "1em"}} className="flex-center">
-            <div style={{display: "flex", border: "1px solid white", fontSize: 14, padding: "1px 4px 1px 4px", gap: 3, borderRadius: 12}}>
+            <div style={{display: "flex", border: "1px solid white", fontSize: 14, padding: "3px 6px 3px 6px", gap: 3, borderRadius: 12}}>
                 Insert Image <img style={{alignSelf: "center"}} className="NewPost__button-image" alt="Camera Icon" src="/images/camera.png" />
             </div>
         </div>
 
-        <div style={{marginBottom: "1em"}} className="flex-center">
-            <div style={{width: 500, textAlign: "center"}}>
-                Width and height can both be numeric such as the examples below, but can also use CSS units of measure. If you wish
-                to skip over "width" you can place the value "null" which means nothing instead of a measurement such as: 
-            </div>
+        <div style={{marginBottom: "1em", textAlign: "center"}} className="flex-center">
+            Width and height can both be numeric such as the examples below, but can also use CSS units of measure. If you wish
+            to skip over "width" you can place the value "null" which means nothing instead of a measurement such as: 
         </div>
 
         <div className="flex-center">
