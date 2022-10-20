@@ -4,8 +4,8 @@ import Post from "../islands/Post.tsx";
 import { authenticate } from "../authentication.ts";
 
 export const handler: Handlers = {
-    async GET(_req, ctx) {
-        const isAuth = await authenticate();
+    GET(_req, ctx) {
+        const isAuth = localStorage?.getItem("refreshToken");
 
         if (isAuth == null) {
             return ctx.renderNotFound();
