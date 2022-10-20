@@ -87,25 +87,24 @@ const NewPost = ({ isPreview, previewValue } : NewPostProps) => {
                             lines.value += `\nimage(${fileUrl})`;
                         }
 
-                    }} style={{visibility: "hidden", width: 0, height: 0, position: "absolute"}} /*ref={imageRef} onChange={(e: any) => updateFileDep(e)}*/ id="file-input" type="file" accept="image/png, image/jpeg" />
+                    }} style={{visibility: "hidden", width: 0, height: 0, position: "absolute"}} id="file-input" type="file" accept="image/png, image/jpeg" />
                 </div>
 
-                <span className="NewPost__options-button">
+                {!isPreview && <span className="NewPost__options-button">
                     Add Link <img className="NewPost__button-image" alt="Camera Icon" src="/images/link.png" />
-                </span>
+                </span>}
             </div>
 
             <div className="NewPost__switch-container">
                 <div className="NewPost__switch">
-                    <button onClick={() => view.value = "code"} style={view.value === "code" ? SELECTED_BUTTON : {}}>
+                    <span className="NewPost__switch-button" onClick={() => view.value = "code"} style={view.value === "code" ? SELECTED_BUTTON : {}}>
                         Code
-                    </button>
+                    </span>
 
-                    <button onClick={() => view.value = "preview"} style={view.value === "preview" ? SELECTED_BUTTON : {}}>
+                    <span className="NewPost__switch-button" onClick={() => view.value = "preview"} style={view.value === "preview" ? SELECTED_BUTTON : {}}>
                         Preview
-                    </button>
+                    </span>
                 </div>
-
             </div>
 
             {
