@@ -38,7 +38,7 @@
 }
 
 .NewPost__options button {
-    width: 8em;
+    min-width: 8em;
     border-radius: 15px;
     background: #7F00FF;
     border: 1px solid white;

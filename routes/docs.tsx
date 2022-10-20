@@ -16,7 +16,7 @@ const Docs = () => {
             <h1 style={{marginTop: ".5em", marginBottom: 0}}>The Interface</h1>
         </div>
 
-        <div style={{marginBottom: ".5em"}} className="flex-center">
+        <div style={{marginBottom: ".3em"}} className="flex-center">
             <div style={{width: 500, textAlign: "center"}}>
                 Here she is, simple enough but with some features under the hood that will
                 allow you to create posts exactly how you would envision them to.
@@ -24,7 +24,7 @@ const Docs = () => {
         </div>
 
         <div className="flex-center">
-            <h2 style={{alignSelf: "center", marginBottom: 0}}>Images</h2>
+            <h2 style={{marginTop: 0, alignSelf: "center", marginBottom: 0}}>Images</h2>
         </div>
 
         <div style={{marginBottom: "1em", textAlign: "center"}}>
@@ -96,7 +96,7 @@ const Docs = () => {
         </div>
 
         <div className="flex-center">
-            <NewPost />
+            <NewPost isPreview />
         </div>
     </div>)
 }

@@ -59,7 +59,11 @@ const getPostMarkup = (data: string) : VNode[] => {
     });
 }
 
-const NewPost = () => {
+interface NewPostProps {
+    isPreview?: boolean;
+}
+
+const NewPost = ({ isPreview } : NewPostProps) => {
     const view = useSignal<string>("code");
     const lines = useSignal<string>('');
 
@@ -113,7 +117,7 @@ const NewPost = () => {
                 </div>
             }
 
-            <button className="NewPost__button">Post it!</button>
+            {!isPreview && <button className="NewPost__button">Post it!</button>}
         </div>
     </div>)
 }
