@@ -33,6 +33,7 @@ const getPostMarkup = (data: string) : VNode[] => {
     });
 
     return elements.map((e, i) => {
+
         if (e.substring(0, 6) === "image(" && e.split('')[e.split('').length - 1] === ")") {
             const [url, width, height] = e.replace('image(', '').replace(')', '').split(', ');
 
