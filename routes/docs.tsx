@@ -68,35 +68,12 @@ const Docs = () => {
         </div>
 
         <div style={{marginBottom: "1em", textAlign: "center"}}>
-            Try it out! Copy each example into the interface then click <span style={{padding: "2px 5px 2px 5px", borderRadius: 12, border: "1px solid white", borderBottom: "none"}}>Preview</span>
+            Try it out! Examine what's in the text box below and click <span style={{padding: "2px 5px 2px 5px", borderRadius: 12, border: "1px solid white", borderBottom: "none"}}>Preview</span> to
+            see the different results. Feel free to erase the text box and provide your own image!
         </div>
 
         <div className="flex-center">
-            <div style={{width: 500, marginBottom: "1em", textAlign: "center", wordBreak: "break-word", padding: "2px 5px 2px 5px", borderRadius: 12, background: "white", color: "#7F00FF"}}>
-                image(https://joesalinas.dev/images/nature/10-8-ivy.webp?__frsh_c=6gaz88w64c2g)
-            </div>
-        </div>
-
-        <div className="flex-center">
-            <div style={{width: 500, marginBottom: "1em", textAlign: "center", wordBreak: "break-word", padding: "2px 5px 2px 5px", borderRadius: 12, background: "white", color: "#7F00FF"}}>
-                image(https://joesalinas.dev/images/nature/10-8-ivy.webp?__frsh_c=6gaz88w64c2g, null, 200)
-            </div>
-        </div>
-
-        <div className="flex-center">
-            <div style={{width: 500, marginBottom: "1em", textAlign: "center", wordBreak: "break-word", padding: "2px 5px 2px 5px", borderRadius: 12, background: "white", color: "#7F00FF"}}>
-                image(https://joesalinas.dev/images/nature/10-8-ivy.webp?__frsh_c=6gaz88w64c2g, 200, null)
-            </div>
-        </div>
-
-        <div className="flex-center">
-            <div style={{width: 500, marginBottom: "1em", textAlign: "center", wordBreak: "break-word", padding: "2px 5px 2px 5px", borderRadius: 12, background: "white", color: "#7F00FF"}}>
-                image(https://joesalinas.dev/images/nature/10-8-ivy.webp?__frsh_c=6gaz88w64c2g, 200, 200)
-            </div>
-        </div>
-
-        <div className="flex-center">
-            <NewPost isPreview previewValue="image(https://joesalinas.dev/images/nature/10-8-ivy.webp?__frsh_c=6gaz88w64c2g)" />
+            <NewPost isPreview previewValue={`image(https://joesalinas.dev/images/nature/10-8-ivy.webp?__frsh_c=6gaz88w64c2g)\n\nimage(https://joesalinas.dev/images/nature/10-8-ivy.webp?__frsh_c=6gaz88w64c2g, 250, 280)\n\nimage(https://joesalinas.dev/images/nature/10-8-ivy.webp?__frsh_c=6gaz88w64c2g, null, 200)\n\nimage(https://joesalinas.dev/images/nature/10-8-ivy.webp?__frsh_c=6gaz88w64c2g, 200, null)`} />
         </div>
     </div>)
 }
