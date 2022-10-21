@@ -2,7 +2,7 @@ import NewPost from "../islands/NewPost.tsx";
 
 const Docs = () => {
 
-    return (<div style={{marginLeft: 10, marginRight: 10}}>
+    return (<div>
         <div className="flex-center">
             <h1 style={{marginTop: ".5em", marginBottom: 0}}>Post Docs</h1>
         </div>
