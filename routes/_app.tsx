@@ -74,7 +74,9 @@ export default function App(props: AppProps) {
     
     <body id="main">
         <SiteBar />
-        <props.Component />
+        <div className="root-body">
+          <props.Component />
+        </div>
     </body>
 
     <script type="text/javascript" src="./pwa-sw.js" />
