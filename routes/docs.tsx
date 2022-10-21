@@ -41,7 +41,7 @@ const Docs = () => {
 
         <div className="flex-center">
             <div style={{width: 500, marginBottom: "1em", textAlign: "center", wordBreak: "break-word", padding: "2px 5px 2px 5px", borderRadius: 12, background: "white", color: "#7F00FF"}}>
-                image(url, height, width)
+                image(url, width, height)
             </div>
         </div>
 
