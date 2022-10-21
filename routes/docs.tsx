@@ -26,22 +26,7 @@ const Docs = () => {
         </div>
 
         <div style={{marginBottom: "1em", textAlign: "center"}}>
-            Simply type <span style={{padding: "2px 5px 2px 5px", borderRadius: 12, background: "white", color: "#7F00FF"}}>image()</span> to specify
-            where you would like a image to be placed in relation to the other content.
-        </div>
-
-        <div style={{marginBottom: "1em", textAlign: "center"}}>
-            <span style={{padding: "2px 5px 2px 5px", borderRadius: 12, background: "white", color: "#7F00FF"}}>image()</span> can take
-            up to three parameters, such as:
-        </div>
-
-        <div style={{marginBottom: "1em", textAlign: "center"}}>
-            <span style={{padding: "2px 5px 2px 5px", borderRadius: 12, background: "white", color: "#7F00FF"}}>image(url, width, height)</span>
-        </div>
-
-        <div style={{marginBottom: "1em", textAlign: "center"}}>
-            The url can be an image from another site where you can "Copy Image Url", or a Url that is generated after uploading from
-            your camera roll by clicking:
+            To upload an image copy a url into image(url_goes_here) or from your camera roll by clicking:
         </div>
 
         <div style={{marginBottom: "1em"}} className="flex-center">
@@ -51,13 +36,18 @@ const Docs = () => {
         </div>
 
         <div style={{marginBottom: "1em", textAlign: "center"}}>
-            Width and height can both be numeric such as the examples below, but can also use CSS units of measure. If you wish
-            to skip over "width" you can place the value "null" which means nothing instead of a measurement such as: 
+            You can also enter a custom height and width for your image in pixels, such as:
         </div>
 
         <div className="flex-center">
             <div style={{width: 500, marginBottom: "1em", textAlign: "center", wordBreak: "break-word", padding: "2px 5px 2px 5px", borderRadius: 12, background: "white", color: "#7F00FF"}}>
-                image(https://joesalinas.dev/images/nature/10-8-ivy.webp?__frsh_c=6gaz88w64c2g, <span style={{paddingLeft: 3, paddingRight: 3, color: "white", background: "#7F00FF"}}>null</span>, 200)
+                image(url, height, width)
+            </div>
+        </div>
+
+        <div className="flex-center">
+            <div style={{width: 500, marginBottom: "1em", textAlign: "center", wordBreak: "break-word", padding: "2px 5px 2px 5px", borderRadius: 12, background: "white", color: "#7F00FF"}}>
+                image(https://joesalinas.dev/images/nature/10-8-ivy.webp?__frsh_c=6gaz88w64c2g, 200, 200)
             </div>
         </div>
 
@@ -67,7 +57,7 @@ const Docs = () => {
         </div>
 
         <div className="flex-center">
-            <NewPost isPreview previewValue={`image(https://joesalinas.dev/images/nature/10-8-ivy.webp?__frsh_c=6gaz88w64c2g)\n\nimage(https://joesalinas.dev/images/nature/10-8-ivy.webp?__frsh_c=6gaz88w64c2g, 250, 280)\n\nimage(https://joesalinas.dev/images/nature/10-8-ivy.webp?__frsh_c=6gaz88w64c2g, null, 200)\n\nimage(https://joesalinas.dev/images/nature/10-8-ivy.webp?__frsh_c=6gaz88w64c2g, 200, null)`} />
+            <NewPost isPreview previewValue={`image(https://joesalinas.dev/images/nature/10-8-ivy.webp?__frsh_c=6gaz88w64c2g)\n\nimage(https://joesalinas.dev/images/nature/10-8-ivy.webp?__frsh_c=6gaz88w64c2g, 250, 280)\n\nimage(https://joesalinas.dev/images/nature/10-8-ivy.webp?__frsh_c=6gaz88w64c2g, null, 200)`} />
         </div>
     </div>)
 }
