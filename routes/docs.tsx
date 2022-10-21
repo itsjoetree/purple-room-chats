@@ -13,20 +13,11 @@ const Docs = () => {
         </div>
 
         <div className="flex-center">
-            <h1 style={{marginTop: ".5em", marginBottom: 0}}>The Interface</h1>
-        </div>
-
-        <div style={{marginBottom: ".3em", textAlign: "center"}}>
-            Here she is, simple enough but with some features under the hood that will
-            allow you to create posts exactly how you would envision them to.
-        </div>
-
-        <div className="flex-center">
             <h2 style={{marginTop: 0, alignSelf: "center", marginBottom: 0}}>Images</h2>
         </div>
 
         <div style={{marginBottom: "1em", textAlign: "center"}}>
-            To upload an image copy a url into image(url_goes_here) or from your camera roll by clicking:
+            To upload an image, copy a photo url from the web into the text box like: image(url_goes_here) or insert an image directly from your camera roll by clicking:
         </div>
 
         <div style={{marginBottom: "1em"}} className="flex-center">
@@ -52,7 +43,7 @@ const Docs = () => {
         </div>
 
         <div style={{marginBottom: "1em", textAlign: "center"}}>
-            Try it out! Examine what's in the text box below and click <span style={{padding: "2px 5px 2px 5px", borderRadius: 12, border: "1px solid white", borderBottom: "none"}}>Preview</span> to
+            Try it out! Examine what's in the text box below and click <span style={{padding: "2px 5px 2px 5px", borderRadius: 12, border: "1px solid white", borderBottom: "none", borderBottomRightRadius: 0, borderBottomLeftRadius: 0}}>Preview</span> to
             see the different results. Feel free to erase the text box and provide your own image!
         </div>
 
