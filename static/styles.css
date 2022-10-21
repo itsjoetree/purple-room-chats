@@ -30,6 +30,8 @@ h1, h2, h3 {
 
 nav {
     font-family: headingFont;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
 }
 
 h1 {
