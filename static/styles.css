@@ -13,7 +13,7 @@ body {
     background-color: #7F00FF;
     color: white;
     margin:0px;
-    font-size: 18px;
+    font-size: 16px;
     margin-top:10px;
     padding: 0px;
     margin-bottom: 5em;
@@ -66,3 +66,16 @@ h3 {
 
 textarea { font-size: 15px; }
 input { font-size: 15px; }
+
+.yin {
+    animation: rotation 3s infinite linear;
+}
+
+@keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }

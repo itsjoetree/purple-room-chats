@@ -1,16 +1,7 @@
-import { Handlers, PageProps } from "$fresh/server.ts";
-import Post from "../islands/Post.tsx";
+import { PageProps } from "$fresh/server.ts";
+import Post from "../../islands/Post.tsx";
 
-export const handler: Handlers = {
-    GET(_req, ctx) {
-        const isAuth = false;
-
-        if (!isAuth) return ctx.renderNotFound();
-        return ctx.render();
-    }
-};
-
-const Profile = ({params, data} : PageProps)  => {
+const Profile = ()  => {
   return (<>
         <div style={{paddingTop: "4em", gap: "1em", display: "flex", justifyContent: "center", alignItems: "center"}}>
             <div style={{display: "flex", gap: 5, flexDirection: "column", width: 500, marginRight: 10, marginLeft: 10, borderRadius: 10, border: "1px solid white", padding: 10}}>
@@ -19,7 +10,9 @@ const Profile = ({params, data} : PageProps)  => {
                         <img style={{borderRadius: "50%", width: 75, height: 75}} src="/images/baddie.webp" />
                     </div>
 
-                    <img alt="settings" src="/images/settings.png" style={{width: 20, height: 20}} />
+                    <div>
+                        <div style={{border: "1px solid white", borderRadius: 12, padding: "3px 5px 3px 5px"}}>Edit Profile</div>
+                    </div>
                 </div>
 
                 <div>
@@ -44,11 +37,10 @@ const Profile = ({params, data} : PageProps)  => {
 
         {
             [
-                {author: "itsjoetree", content: "wowww hey so yeah we did that mhm"},
-                {author: "itsjoetree", content: "wowww hey so yeah we did that mhm"},
-                {author: "itsjoetree", content: "wowww hey so yeah we did that mhm"},
-                {author: "itsjoetree", content: "wowww hey so yeah we did that mhmmmmmmmmmmmmmmmmmmmmmmmmmmmm"},
-            ].map(p => <Post author={p.author} content={p.content} isPhotoPost={false}  />)
+                {author: "baddiefromtheblock", content: "so i got the trees, who down?"},
+                {author: "baddiefromtheblock", content: "scaries was extra tonight"},
+                {author: "baddiefromtheblock", content: "period"},
+            ].map((p, i) => <Post author={p.author} content={p.content} isPhotoPost={false} isLiked={i % 2 === 0}  />)
         }
     </>
   )

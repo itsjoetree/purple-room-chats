@@ -14,8 +14,9 @@ import * as $7 from "./routes/api/users.ts";
 import * as $8 from "./routes/docs.tsx";
 import * as $9 from "./routes/feed.tsx";
 import * as $10 from "./routes/index.tsx";
-import * as $11 from "./routes/vip/post.tsx";
-import * as $12 from "./routes/vip/register.tsx";
+import * as $11 from "./routes/preview/profile.tsx";
+import * as $12 from "./routes/vip/post.tsx";
+import * as $13 from "./routes/vip/register.tsx";
 import * as $$0 from "./islands/IndexBlock.tsx";
 import * as $$1 from "./islands/NewPost.tsx";
 import * as $$2 from "./islands/Post.tsx";
@@ -34,8 +35,9 @@ const manifest = {
     "./routes/docs.tsx": $8,
     "./routes/feed.tsx": $9,
     "./routes/index.tsx": $10,
-    "./routes/vip/post.tsx": $11,
-    "./routes/vip/register.tsx": $12,
+    "./routes/preview/profile.tsx": $11,
+    "./routes/vip/post.tsx": $12,
+    "./routes/vip/register.tsx": $13,
   },
   islands: {
     "./islands/IndexBlock.tsx": $$0,

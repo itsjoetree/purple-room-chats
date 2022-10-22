@@ -24,7 +24,7 @@ const IndexBlock = () => {
         <h2 className="IndexBlock__development">Progress Notes 🧙🏼‍♂️</h2>
 
         <ul>
-          <li>Progress on profile, feed and post interfaces.</li>
+          <li>Progress on <a href="/preview/profile" style={{color: "white"}}>profile</a>, feed and post interfaces.</li>
           <li>Made <a style={{color: "white"}} href="/docs">docs</a> page for posting on the site.</li>
           <li>Started building user authentication system.</li>
         </ul>

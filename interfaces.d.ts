@@ -49,5 +49,6 @@ export interface IPost {
     author: string;
     content: string;
     isPhotoPost: boolean;
+    isLiked?: boolean;
 }
 
