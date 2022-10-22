@@ -79,3 +79,7 @@ input { font-size: 15px; }
       transform: rotate(359deg);
     }
   }
+
+.blue-theme {
+    background-color: #2795fb !important; 
+}

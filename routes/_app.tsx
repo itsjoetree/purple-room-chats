@@ -1,5 +1,6 @@
 import { Head } from "$fresh/runtime.ts";
 import { AppProps } from "$fresh/server.ts";
+import BodyBlock from "../islands/BodyBlock.tsx";
 import SiteBar from "../islands/SiteBar.tsx";
 
 export default function App(props: AppProps) {

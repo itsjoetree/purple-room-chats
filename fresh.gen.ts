@@ -15,12 +15,15 @@ import * as $8 from "./routes/docs.tsx";
 import * as $9 from "./routes/feed.tsx";
 import * as $10 from "./routes/index.tsx";
 import * as $11 from "./routes/preview/profile.tsx";
-import * as $12 from "./routes/vip/post.tsx";
-import * as $13 from "./routes/vip/register.tsx";
-import * as $$0 from "./islands/IndexBlock.tsx";
-import * as $$1 from "./islands/NewPost.tsx";
-import * as $$2 from "./islands/Post.tsx";
-import * as $$3 from "./islands/SiteBar.tsx";
+import * as $12 from "./routes/preview/settings.tsx";
+import * as $13 from "./routes/vip/post.tsx";
+import * as $14 from "./routes/vip/register.tsx";
+import * as $$0 from "./islands/BodyBlock.tsx";
+import * as $$1 from "./islands/IndexBlock.tsx";
+import * as $$2 from "./islands/NewPost.tsx";
+import * as $$3 from "./islands/Post.tsx";
+import * as $$4 from "./islands/SiteBar.tsx";
+import * as $$5 from "./islands/Textarea.tsx";
 
 const manifest = {
   routes: {
@@ -36,14 +39,17 @@ const manifest = {
     "./routes/feed.tsx": $9,
     "./routes/index.tsx": $10,
     "./routes/preview/profile.tsx": $11,
-    "./routes/vip/post.tsx": $12,
-    "./routes/vip/register.tsx": $13,
+    "./routes/preview/settings.tsx": $12,
+    "./routes/vip/post.tsx": $13,
+    "./routes/vip/register.tsx": $14,
   },
   islands: {
-    "./islands/IndexBlock.tsx": $$0,
-    "./islands/NewPost.tsx": $$1,
-    "./islands/Post.tsx": $$2,
-    "./islands/SiteBar.tsx": $$3,
+    "./islands/BodyBlock.tsx": $$0,
+    "./islands/IndexBlock.tsx": $$1,
+    "./islands/NewPost.tsx": $$2,
+    "./islands/Post.tsx": $$3,
+    "./islands/SiteBar.tsx": $$4,
+    "./islands/Textarea.tsx": $$5,
   },
   baseUrl: import.meta.url,
   config,

@@ -1,8 +1,10 @@
-import { PageProps } from "$fresh/server.ts";
+import BodyBlock from "../../islands/BodyBlock.tsx";
 import Post from "../../islands/Post.tsx";
 
 const Profile = ()  => {
+
   return (<>
+        <BodyBlock />
         <div style={{paddingTop: "4em", gap: "1em", display: "flex", justifyContent: "center", alignItems: "center"}}>
             <div style={{display: "flex", gap: 5, flexDirection: "column", width: 500, marginRight: 10, marginLeft: 10, borderRadius: 10, border: "1px solid white", padding: 10}}>
                 <div style={{display: "flex", justifyContent: "space-between", maxHeight: 90, gap: 2}}>                 
