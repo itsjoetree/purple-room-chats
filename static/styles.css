@@ -26,6 +26,11 @@ body {
     body {
         font-size: 12px !important;
     }
+
+    .index__bubbble {
+        width: 25px !important;
+        height: 25px !important;
+    }
 }
 
 h1, h2, h3 {

@@ -27,10 +27,8 @@ export default function Home({ data } : PageProps) {
           <div>
             <div style={{marginTop: `${!data ? "1.5em" : 0}`}} className="IndexBlock__heading-container">
               <h1 style={{marginTop: `${data ? 0 : ''}`}}  className="index__heading">
-                purple room chats
+                purple room chats <img style={{alignSelf: "center"}} className="index__bubble" src="/images/bubbles-v2.png" />
               </h1>
-
-              <img style={{alignSelf: "center"}} className="index__bubble" src="/images/bubbles-v2.png" />
             </div>
           </div>
 
