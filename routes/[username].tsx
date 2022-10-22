@@ -10,7 +10,7 @@ export const handler: Handlers = {
     }
 };
 
-const Profile = ({params, data} : PageProps)  => {
+const Profile = ()  => {
   return (<>
         <div style={{paddingTop: "4em", gap: "1em", display: "flex", justifyContent: "center", alignItems: "center"}}>
             <div style={{display: "flex", gap: 5, flexDirection: "column", width: 500, marginRight: 10, marginLeft: 10, borderRadius: 10, border: "1px solid white", padding: 10}}>
