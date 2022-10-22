@@ -26,7 +26,7 @@ const getDate = (date: Date) : string => {
     }
 }
 
-const MIN_REMOVED = 20000;
+const MIN_REMOVED = 30;
 const GLOBAL_DATE = new Date(2022, 10, 21, 19, 58);
 GLOBAL_DATE.setMinutes(GLOBAL_DATE.getMinutes() - MIN_REMOVED);
 
@@ -47,7 +47,7 @@ const Post = ({ _id, author, content, isLiked} : IPost) => {
 
                 <div style={{position: "relative", height: 30, display: "flex", justifyContent: "flex-end", borderTop: "1px solid white"}}>
                     <div style={{position: "absolute", top: 1.5, alignSelf: "center"}}>
-                        <img style={{cursor: "pointer", height: 25, width: 25, filter: isLiked ? "drop-shadow(0px 0px 10px blue)" : '', transform: "translate3d(0, 0, 0)"}} src="/images/yin.png" />
+                        <img style={{cursor: "pointer", height: 25, width: 25, filter: isLiked ? "drop-shadow(0px 0px 10px white)" : '', transform: "translate3d(0, 0, 0)"}} src="/images/yin.png" />
                     </div>
                 </div>
             </div>

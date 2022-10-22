@@ -37,6 +37,7 @@ const Profile = ()  => {
 
         {
             [
+                {author: "baddiefromtheblock", content: "midnights goes hard"},
                 {author: "baddiefromtheblock", content: "so i got the trees, who down?"},
                 {author: "baddiefromtheblock", content: "scaries was extra tonight"},
                 {author: "baddiefromtheblock", content: "period"},
