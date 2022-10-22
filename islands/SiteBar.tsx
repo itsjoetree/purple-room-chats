@@ -11,7 +11,11 @@ const SiteBar = ({ isPwa } : ISiteBar) => {
 
     useEffect(() => {
         const split = location.href.split("/");
-        const page = split[split.length - 1];
+        let page = split[split.length - 1];
+
+        if (page.indexOf("?mode=standalone") !== -1) {
+            page = page.split("?")[0];
+        }
 
         if (page === '') {
             currentPage.value = 'home';
@@ -28,13 +32,11 @@ const SiteBar = ({ isPwa } : ISiteBar) => {
         </Head>
         
         <div className="siteBar__linkContainer">
-            <a className="siteBar__link" href={`/${isPwa ? "?mode=standalone" : ''}`}>Home</a>
-            {currentPage.value === "home" && <img alt="Selected Navbar Item" style={{height: 10, width: 10}} src="/images/chevron-up.png" />}
+            <a className={`siteBar__link ${currentPage.value === "home" ? "glow" : ''}`} href={`/${isPwa ? "?mode=standalone" : ''}`}>Home</a>
         </div>
 
         <div className="siteBar__linkContainer">
-            <a className="siteBar__link" href={`/docs${isPwa ? "?mode=standalone" : ''}`}>Docs</a>
-            {currentPage.value === "docs" && <img alt="Selected Navbar Item" style={{height: 10, width: 10}} src="/images/chevron-up.png" />}
+            <a className={`siteBar__link ${currentPage.value === "docs" ? "glow" : ''}`} href={`/docs${isPwa ? "?mode=standalone" : ''}`}>Docs</a>
         </div>
 
     </nav>)
