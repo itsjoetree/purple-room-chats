@@ -35,12 +35,12 @@ const Post = ({ _id, author, content, isLiked} : IPost) => {
     return (
         <div style={{marginTop: "1em", gap: "1em", display: "flex", justifyContent: "center", alignItems: "center"}}>
             <div style={{display: "flex", flexDirection: "column", width: 500, marginRight: 10, marginLeft: 10, borderRadius: 10, border: "1px solid white", padding: 10, paddingBottom: 0}}>
-                <div style={{display: "flex", gap: 5, marginBottom: 10}}>
+                <div style={{display: "flex", marginBottom: 10}}>
                     <div className="flex-center" style={{border: "2px solid white", borderRadius: "50%", width: 35, height: 35}}>
-                        <img style={{borderRadius: "50%", width: 35, height: 35}} src="/images/baddie.webp" />
+                        <img style={{borderRadius: "50%", width: 35, height: 35}} src="/images/baddie.png" />
                     </div>
-                    <span style={{alignSelf: "center"}}>{author}</span>
-                    <span style={{alignSelf: "center"}}>&#x2022; {getDate(GLOBAL_DATE)}</span>
+                    <span style={{alignSelf: "center", marginLeft: 5}}>{author}</span>
+                    <span style={{alignSelf: "center", marginLeft: 5}}>&#x2022; {getDate(GLOBAL_DATE)}</span>
                 </div>
 
                 <span style={{wordBreak: "break-all", marginBottom: 0}}>{content}</span>

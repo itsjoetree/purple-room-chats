@@ -26,16 +26,16 @@ const SiteBar = ({ isPwa } : ISiteBar) => {
         }
     }, [])
 
-    return (<nav style={{display: "flex", gap: "1em", justifyContent: "center", alignItems: "center"}} className={`siteBar ${isPwa ? "siteBar__bottom" : "siteBar__top"}`}>
+    return (<nav style={{display: "flex", justifyContent: "center", alignItems: "center"}} className={`siteBar ${isPwa ? "siteBar__bottom" : "siteBar__top"}`}>
         <Head>
             <link href="/stylesheets/SiteBar.css" rel="stylesheet" />
         </Head>
         
-        <div className="siteBar__linkContainer">
+        <div style={{marginRight: "1em"}} className="siteBar__linkContainer">
             <a className={`siteBar__link ${currentPage.value === "home" ? "glow" : ''}`} href={`/${isPwa ? "?mode=standalone" : ''}`}>Home</a>
         </div>
 
-        <div className="siteBar__linkContainer">
+        <div style={{marginRight: "1em"}} className="siteBar__linkContainer">
             <a className={`siteBar__link ${currentPage.value === "docs" ? "glow" : ''}`} href={`/docs${isPwa ? "?mode=standalone" : ''}`}>Docs</a>
         </div>
 

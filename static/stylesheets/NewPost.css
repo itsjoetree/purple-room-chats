@@ -48,7 +48,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 2px;
 }
 
 .NewPost__textarea-container {
@@ -101,7 +100,6 @@
 
 .NewPost__switch {
     display: flex;
-    gap: 10px;
     position: relative;
 }
 
@@ -116,5 +114,6 @@
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
     cursor: pointer;
+    margin-right: 10px;
 }
 

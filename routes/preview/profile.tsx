@@ -16,7 +16,6 @@ const Profile = ({ data } : PageProps)  => {
   return (<>
         <SiteBar isPwa={data} />
 
-        <BodyBlock />
         <div style={{paddingTop: `${!data ? "3em" : ''}`, gap: "1em", display: "flex", justifyContent: "center", alignItems: "center"}}>
             <div style={{display: "flex", gap: 5, flexDirection: "column", width: 500, marginRight: 10, marginLeft: 10, borderRadius: 10, border: "1px solid white", padding: 10}}>
                 <div style={{display: "flex", justifyContent: "space-between", maxHeight: 90, gap: 2}}>                 
@@ -59,6 +58,9 @@ const Profile = ({ data } : PageProps)  => {
                 {author: "baddiefromtheblock", content: "lit candle, in bed, that's the vibe for the night"},
             ].map((p, i) => <Post author={p.author} content={p.content} isPhotoPost={false} isLiked={i % 2 === 0}  />)
         }
+
+        <BodyBlock />
+
     </>
   )
 }

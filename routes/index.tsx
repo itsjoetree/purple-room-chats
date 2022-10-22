@@ -32,7 +32,7 @@ export default function Home({ data } : PageProps) {
             </div>
           </div>
 
-          <img className="index__sun" src="/images/the-sun.webp" style={{}} />
+          <img className="index__sun" src="/images/the-sun.png" style={{}} />
         
           <h2 className="IndexBlock__development">in development 👨🏻‍💻</h2>
           <p style={{textAlign: "center", maxWidth: 300}}>

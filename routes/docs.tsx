@@ -34,8 +34,8 @@ const Docs = ({ data } : PageProps) => {
         </div>
 
         <div style={{marginBottom: "1em"}} className="flex-center">
-            <div style={{display: "flex", border: "1px solid white", fontSize: 14, padding: "3px 6px 3px 6px", gap: 3, borderRadius: 12}}>
-                Insert Image <img style={{alignSelf: "center"}} className="NewPost__button-image" alt="Camera Icon" src="/images/camera.png" />
+            <div style={{display: "flex", border: "1px solid white", fontSize: 14, padding: "3px 6px 3px 6px", borderRadius: 12}}>
+                Insert Image <img style={{marginLeft: 2, alignSelf: "center"}} className="NewPost__button-image" alt="Camera Icon" src="/images/camera.png" />
             </div>
         </div>
 
@@ -61,7 +61,7 @@ const Docs = ({ data } : PageProps) => {
         </div>
 
         <div className="flex-center">
-            <NewPost isPreview previewValue={`image(https://joesalinas.dev/images/nature/10-8-ivy.webp?__frsh_c=6gaz88w64c2g)\n\nimage(https://joesalinas.dev/images/nature/10-8-ivy.webp?__frsh_c=6gaz88w64c2g, 250, 280)\n\nimage(https://joesalinas.dev/images/nature/10-8-ivy.webp?__frsh_c=6gaz88w64c2g, null, 200)`} />
+            <NewPost isPreview previewValue={`image(https://thumbs.dreamstime.com/b/wooden-small-house-tropical-forest-thailand-34533526.jpg)\n\nimage(https://thumbs.dreamstime.com/b/wooden-small-house-tropical-forest-thailand-34533526.jpg, 250, 280)\n\nimage(https://thumbs.dreamstime.com/b/wooden-small-house-tropical-forest-thailand-34533526.jpg, null, 200)`} />
         </div>
     </div>)
 }

@@ -79,7 +79,7 @@ const NewPost = ({ isPreview, previewValue } : NewPostProps) => {
             <div className="NewPost__options">
                 <div>
                     <label className="NewPost__options-button" title="Upload" htmlFor="file-input">
-                        Insert Image <img className="NewPost__button-image" alt="Camera Icon" src="/images/camera.png" />
+                        Insert Image <img style={{marginLeft: 2}} className="NewPost__button-image" alt="Camera Icon" src="/images/camera.png" />
                     </label>
 
                     <input onChange={(e) => {
@@ -111,8 +111,8 @@ const NewPost = ({ isPreview, previewValue } : NewPostProps) => {
 
             {
                 view.value === "preview" && <div className="NewPost__preview">
-                    <div style={{display: "flex", gap: 10, paddingBottom: 5}}>
-                        <div className="flex-center" style={{borderRadius: "50%", width: 35, height: 35}}>
+                    <div style={{display: "flex", paddingBottom: 5}}>
+                        <div className="flex-center" style={{marginRight: 10, borderRadius: "50%", width: 35, height: 35}}>
                             <img style={{maxHeight: "100%", maxWidth: "100%", borderRadius: "50%"}} src="/images/baddie.webp" />
                         </div>
                         <span style={{alignSelf: "center"}}>baddiefromtheblock</span>
