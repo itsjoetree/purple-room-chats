@@ -25,7 +25,7 @@ export default function Home({ data } : PageProps) {
 
         <div style={{display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center"}}>
           <div className="IndexBlock__heading-container">
-            <h1 style={{marginTop: `${!data ? "1.5em" : ''}`}} className="index__heading">
+            <h1 style={{marginTop: `${!data ? "1.5em" : 0}`}} className="index__heading">
               purple room chats
             </h1>
 

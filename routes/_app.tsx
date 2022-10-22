@@ -12,13 +12,14 @@ export default function App(props: AppProps) {
       <meta name="description" content="Purple room chats" />
       <meta name="keywords" content="Podcast, Chats" />
       <meta name="author" content="Joe Salinas" />
-      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+      <meta name="viewport" content="viewport-fit=cover, width=device-width, initial-scale=1, maximum-scale=1" /> 
+
       <meta name="theme-color" content="#7F00FF" />
       <meta name="msapplication-TileColor" content="#7F00FF" />
       <meta name="msapplication-TileImage" content="./mstile-150x150.png" />
       <meta name="mobile-web-app-capable" content="yes" />
       <meta name="apple-mobile-web-app-capable" content="yes" />
-      <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
       <meta name="apple-mobile-web-app-title" content="purple room chats" />
       <meta name="application-name" content="purple room chats" />
 

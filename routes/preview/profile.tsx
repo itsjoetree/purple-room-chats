@@ -55,6 +55,8 @@ const Profile = ({ data } : PageProps)  => {
                 {author: "baddiefromtheblock", content: "so i got the trees, who down?"},
                 {author: "baddiefromtheblock", content: "scaries was extra tonight"},
                 {author: "baddiefromtheblock", content: "period"},
+                {author: "baddiefromtheblock", content: "what's the moves?"},
+                {author: "baddiefromtheblock", content: "lit candle, in bed, that's the vibe for the night"},
             ].map((p, i) => <Post author={p.author} content={p.content} isPhotoPost={false} isLiked={i % 2 === 0}  />)
         }
     </>
