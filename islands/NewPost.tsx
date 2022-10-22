@@ -113,7 +113,7 @@ const NewPost = ({ isPreview, previewValue } : NewPostProps) => {
                 view.value === "preview" && <div className="NewPost__preview">
                     <div style={{display: "flex", paddingBottom: 5}}>
                         <div className="flex-center" style={{marginRight: 10, borderRadius: "50%", width: 35, height: 35}}>
-                            <img style={{maxHeight: "100%", maxWidth: "100%", borderRadius: "50%"}} src="/images/baddie.webp" />
+                            <img style={{maxHeight: "100%", maxWidth: "100%", borderRadius: "50%"}} src="/images/baddie.png" />
                         </div>
                         <span style={{alignSelf: "center"}}>baddiefromtheblock</span>
                     </div>
