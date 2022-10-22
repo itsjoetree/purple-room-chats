@@ -34,8 +34,8 @@ const Post = ({ _id, author, content, isLiked} : IPost) => {
 
     return (
         <div style={{marginTop: "1em", gap: "1em", display: "flex", justifyContent: "center", alignItems: "center"}}>
-            <div style={{display: "flex", gap: 5, flexDirection: "column", width: 500, marginRight: 10, marginLeft: 10, borderRadius: 10, border: "1px solid white", padding: 10, paddingBottom: 0}}>
-                <div style={{display: "flex", gap: 5}}>
+            <div style={{display: "flex", flexDirection: "column", width: 500, marginRight: 10, marginLeft: 10, borderRadius: 10, border: "1px solid white", padding: 10, paddingBottom: 0}}>
+                <div style={{display: "flex", gap: 5, marginBottom: 10}}>
                     <div className="flex-center" style={{border: "2px solid white", borderRadius: "50%", width: 35, height: 35}}>
                         <img style={{borderRadius: "50%", width: 35, height: 35}} src="/images/baddie.webp" />
                     </div>
@@ -43,10 +43,10 @@ const Post = ({ _id, author, content, isLiked} : IPost) => {
                     <span style={{alignSelf: "center"}}>&#x2022; {getDate(GLOBAL_DATE)}</span>
                 </div>
 
-                <span style={{wordBreak: "break-all"}}>{content}</span>
+                <span style={{wordBreak: "break-all", marginBottom: 0}}>{content}</span>
 
-                <div style={{position: "relative", height: 30, display: "flex", justifyContent: "flex-end", borderTop: "1px solid white"}}>
-                    <div style={{position: "absolute", top: 1.5, alignSelf: "center"}}>
+                <div style={{display: "flex", justifyContent: "flex-end"}}>
+                    <div style={{alignSelf: "center"}}>
                         <img style={{cursor: "pointer", height: 25, width: 25, filter: isLiked ? "drop-shadow(0px 0px 10px white)" : '', transform: "translate3d(0, 0, 0)"}} src="/images/yin.png" />
                     </div>
                 </div>
