@@ -20,7 +20,7 @@ const Profile = ({ data } : PageProps)  => {
             <div style={{display: "flex", gap: 5, flexDirection: "column", width: 500, marginRight: 10, marginLeft: 10, borderRadius: 10, border: "1px solid white", padding: 10}}>
                 <div style={{display: "flex", justifyContent: "space-between", maxHeight: 90, gap: 2}}>                 
                     <div style={{border: "2px solid white", borderRadius: "50%", width: 75, height: 75}}>
-                        <img style={{borderRadius: "50%", width: 75, height: 75}} src="/images/baddie.webp" />
+                        <img style={{borderRadius: "50%", width: 75, height: 75}} src="/images/baddie.png" />
                     </div>
 
                     <div>
