@@ -19,7 +19,7 @@ export default function App(props: AppProps) {
       <meta name="msapplication-TileImage" content="./mstile-150x150.png" />
       <meta name="mobile-web-app-capable" content="yes" />
       <meta name="apple-mobile-web-app-capable" content="yes" />
-
+      <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
       <meta name="apple-mobile-web-app-title" content="purple room chats" />
       <meta name="application-name" content="purple room chats" />
 
