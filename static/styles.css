@@ -22,6 +22,12 @@ body {
     margin-left: auto;
 }
 
+@media (max-width: 300px) {
+    body {
+        font-size: 12px !important;
+    }
+}
+
 h1, h2, h3 {
     font-family: headingFont;
 }

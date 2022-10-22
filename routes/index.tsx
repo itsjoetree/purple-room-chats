@@ -29,7 +29,7 @@ export default function Home({ data } : PageProps) {
               purple room chats
             </h1>
 
-            <img style={{marginTop: `${!data ? "1.5em" : ''}`}} className="index__bubble" src="/images/bubbles-v2.png" />
+            <img style={{marginTop: `${!data ? "1.5em" : 0}`}} className="index__bubble" src="/images/bubbles-v2.png" />
           </div>
 
           <img className="index__sun" src="/images/the-sun.webp" style={{}} />
