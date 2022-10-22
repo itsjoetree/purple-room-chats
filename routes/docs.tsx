@@ -17,7 +17,7 @@ const Docs = ({ data } : PageProps) => {
         <SiteBar isPwa={data} />
 
         <div className="flex-center">
-            <h1 style={{marginTop: ".5em", marginBottom: 0}}>Post Docs</h1>
+            <h1 style={{marginTop: `${!data ? ".5em" : ''}`, marginBottom: 0}}>Post Docs</h1>
         </div>
 
         <div style={{textAlign: "center"}}>

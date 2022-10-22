@@ -22,7 +22,8 @@
 .siteBar__bottom {
     border-top: 2px solid white;
     bottom: 0;
-    padding-bottom: 18px;
+    left: 0;
+    padding-bottom: 2em;
 }
 
 .siteBar__disabledLink {
