@@ -24,12 +24,14 @@ export default function Home({ data } : PageProps) {
         <SiteBar isPwa={data} />
 
         <div style={{display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center"}}>
-          <div className="IndexBlock__heading-container">
-            <h1 style={{marginTop: `${!data ? "1.5em" : 0}`}} className="index__heading">
-              purple room chats
-            </h1>
+          <div>
+            <div style={{marginTop: `${!data ? "1.5em" : 0}`}} className="IndexBlock__heading-container">
+              <h1 style={{marginTop: `${data ? 0 : ''}`}}  className="index__heading">
+                purple room chats
+              </h1>
 
-            <img style={{marginTop: `${!data ? "1.5em" : 0}`}} className="index__bubble" src="/images/bubbles-v2.png" />
+              <img style={{alignSelf: "center"}} className="index__bubble" src="/images/bubbles-v2.png" />
+            </div>
           </div>
 
           <img className="index__sun" src="/images/the-sun.webp" style={{}} />

@@ -36,16 +36,16 @@ const Profile = ({ data } : PageProps)  => {
                     </div>
 
                     <span>
-                        yooo what's good?
+                        local baddie 💋
                     </span>
                 </div>
             </div>
         </div>
-        
+
         <div className="flex-center" style={{ marginTop: ".5em"}}>
             <div style={{width: 500, borderRadius: 10, border: "1px solid white", padding: 10, height: 110, marginRight: 10, marginLeft: 10}}>
                 <span>Vibing out to</span>
-                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/6xsskfktcBgJWHPYd8wOn0?si=372fbc5c097148f2?utm_source=generator&theme=0" width="100%" height="100%" frameBorder="0" loading="lazy"></iframe>
+                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/0mnoeoS9UklYuKVbkwCkAX?si=a7ac535e4d5a463a?utm_source=generator&theme=0" width="100%" height="100%" frameBorder="0" loading="lazy"></iframe>
             </div>
         </div>
 
