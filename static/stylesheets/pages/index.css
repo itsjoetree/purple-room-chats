@@ -18,9 +18,10 @@
     height: 300px;
 }
 
+
 @media (max-width: 600px) {
     .index__heading {
-        font-size: 2em !important;
+        font-size: 1.8em !important;
     }
     
     .index__bubble {

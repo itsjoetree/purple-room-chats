@@ -1,9 +1,9 @@
 {
 	"name": "purple room chats",
 	"short_name": "PRC",
-	"description": "Demo for progressive web app with push notifications, background sync etc.",
+	"description": "Low key media site",
 	"scope": "/",
-    "start_url": "/",
+    "start_url": "/?mode=standalone",
 	"display": "standalone",
 	"orientation": "portrait",
 	"background_color": "#f5f5f5",

@@ -1,8 +1,21 @@
+import { Handlers, PageProps } from "https://deno.land/x/fresh@1.1.2/server.ts";
 import NewPost from "../islands/NewPost.tsx";
+import SiteBar from "../islands/SiteBar.tsx";
 
-const Docs = () => {
+export const handler: Handlers<boolean> = {
+    GET(req, ctx) {
+        const url = new URL(req.url);
+        const result = url.searchParams.get("mode");
+  
+        return ctx.render(result != null);
+    }
+};
+
+const Docs = ({ data } : PageProps) => {
 
     return (<div>
+        <SiteBar isPwa={data} />
+
         <div className="flex-center">
             <h1 style={{marginTop: ".5em", marginBottom: 0}}>Post Docs</h1>
         </div>

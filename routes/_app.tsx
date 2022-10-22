@@ -1,7 +1,5 @@
 import { Head } from "$fresh/runtime.ts";
-import { AppProps } from "$fresh/server.ts";
-import BodyBlock from "../islands/BodyBlock.tsx";
-import SiteBar from "../islands/SiteBar.tsx";
+import { AppProps, Handlers } from "$fresh/server.ts";
 
 export default function App(props: AppProps) {
 
@@ -72,13 +70,12 @@ export default function App(props: AppProps) {
         document.body.appendChild(el);
       </script>
     </Head>
-    
-    <body id="main">
-        <SiteBar />
-        <div className="root-body">
-          <props.Component />
-        </div>
-    </body>
+
+      <body id="main">
+          <div className="root-body">
+            <props.Component />
+          </div>
+      </body>
 
     <script type="text/javascript" src="./pwa-sw.js" />
     <script type="text/javascript" src="./pwa-sw-register.js" />

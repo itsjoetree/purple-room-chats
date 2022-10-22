@@ -1,11 +1,23 @@
+import { Handlers, PageProps } from "$fresh/server.ts";
 import BodyBlock from "../../islands/BodyBlock.tsx";
 import Post from "../../islands/Post.tsx";
+import SiteBar from "../../islands/SiteBar.tsx";
 
-const Profile = ()  => {
-
+export const handler: Handlers<boolean> = {
+    GET(req, ctx) {
+        const url = new URL(req.url);
+        const result = url.searchParams.get("mode");
+  
+        return ctx.render(result != null);
+    }
+};
+  
+const Profile = ({ data } : PageProps)  => {
   return (<>
+        <SiteBar isPwa={data} />
+
         <BodyBlock />
-        <div style={{paddingTop: "4em", gap: "1em", display: "flex", justifyContent: "center", alignItems: "center"}}>
+        <div style={{paddingTop: `${!data ? "3em" : ''}`, gap: "1em", display: "flex", justifyContent: "center", alignItems: "center"}}>
             <div style={{display: "flex", gap: 5, flexDirection: "column", width: 500, marginRight: 10, marginLeft: 10, borderRadius: 10, border: "1px solid white", padding: 10}}>
                 <div style={{display: "flex", justifyContent: "space-between", maxHeight: 90, gap: 2}}>                 
                     <div style={{border: "2px solid white", borderRadius: "50%", width: 75, height: 75}}>
